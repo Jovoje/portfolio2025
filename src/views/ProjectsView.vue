@@ -112,16 +112,14 @@ const projects = [
 ]
 
 const variants = ['normal','tall','wide','big']
-projects.forEach(p => { p.variant = 'normal' }) // default
+projects.forEach(p => { p.variant = 'normal' }) 
 
-// Gør nogle tilfældige for at få “tilfældigt” layout
 onMounted(() => {
   projects.forEach(p => {
     const r = Math.random()
     if (r > 0.82) p.variant = 'big'
     else if (r > 0.65) p.variant = 'wide'
     else if (r > 0.48) p.variant = 'tall'
-    // resten forbliver 'normal'
   })
 })
 
@@ -130,13 +128,13 @@ const selectedProject = ref(null)
 const openProject = (project) => {
   selectedProject.value = project
   showModal.value = true
-  document.documentElement.classList.add('no-scroll') // lås scroll
+  document.documentElement.classList.add('no-scroll') 
 }
 
 const closeModal = () => {
   showModal.value = false
   selectedProject.value = null
-  document.documentElement.classList.remove('no-scroll') // lås op
+  document.documentElement.classList.remove('no-scroll') 
 }
 </script>
 
@@ -312,15 +310,15 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
 .modal {
   position: relative;
   background: #000000;
-  width: 90vw;       /* 95% af vinduets bredde */
-  height: 86vh;      /* 90% af vinduets højde */
+  width: 90vw;       
+  height: 86vh;     
   padding: 2rem;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   color: white;
   box-shadow: 0 0 30px rgba(0,0,0,0.8);
-  overflow: hidden;  /* skjul ting der går udenfor */
+  overflow: hidden;  
 }
 
 .modal-close {
@@ -343,7 +341,6 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   height: 100%;
 }
 
-/* Venstre kolonne: grid med naturlige proportioner + scroll */
 .modal-images {
   flex: 0 0 65%;
   display: grid;
@@ -354,13 +351,12 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   align-content: start;
 }
 
-/* Viser hele billeder/videoer (ingen cropping) */
 .modal-images img,
 .modal-images video {
   width: 100%;
-  height: auto;               /* bevar proportioner */
-  object-fit: contain;        /* vis hele med evt. letterboxing */
-  background: #000;           /* sort baggrund rundt om */
+  height: auto;              
+  object-fit: contain;       
+  background: #000;
   border-radius: 4px;
   display: block;
 }
@@ -380,14 +376,12 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   margin-bottom: 1.4rem;
 }
 
-.modal-text p { margin-bottom: 2.6rem; /* giver ekstra luft mellem afsnittene */ line-height: 2.2; /* gør linjeafstanden større inden for hvert afsnit */ } .modal-header { margin-bottom: 0.75rem; } .modal-header h2 { margin: 0 0 0.25rem 0; font-size: 1.25rem; } .modal-subtitle { margin: 0; color: #43548c; font-size: 0.95rem; }
+.modal-text p { margin-bottom: 2.6rem;  line-height: 2.2; } .modal-header { margin-bottom: 0.75rem; } .modal-header h2 { margin: 0 0 0.25rem 0; font-size: 1.25rem; } .modal-subtitle { margin: 0; color: #43548c; font-size: 0.95rem; }
 
-/* Hver media wrapper */
 .media {
   scroll-snap-align: start;
 }
 
-/* Scroll-snap på venstre side */
 .modal-images {
   flex: 0 0 65%;
   display: grid;
@@ -418,13 +412,13 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   }
 
   .modal-content {
-    flex-direction: column;   /* billeder over teksten */
+    flex-direction: column;   
     gap: 1rem;
   }
 
   .modal-images {
     flex: none;
-    max-height: 50vh;        /* begræns galleri-højde */
+    max-height: 50vh;      
     scroll-snap-type: y mandatory;
   }
 

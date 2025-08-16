@@ -4,7 +4,6 @@ import About from './views/AboutView.vue'
 import Contact from './views/ContactView.vue'
 import Projects from './views/ProjectsView.vue'
 
-// IMPORTÉR BAGGRUND
 import bg from './assets/school/background2.png'
 
 const routes = {
@@ -35,10 +34,8 @@ export default {
 </script>
 
 <template>
-  <!-- FAST BAGGRUND -->
   <img class="bg" :src="bg" alt="" aria-hidden="true" />
 
-  <!-- undgå <body> i templates, men hvis du vil beholde det, kan du udskifte div'en med body -->
   <div class="app-shell">
     <nav class="navbar">
       <ul class="navbar-left">
@@ -57,10 +54,9 @@ export default {
 
 <style>
 
-/* 1) Sørg for at roden aldrig er hvid */
 html, body {
   margin: 0;
-  background-color: #000;         /* vigtig for iOS overscroll */
+  background-color: #000;        
 }
 
 body {
@@ -70,7 +66,6 @@ body {
   background-attachment: fixed;
 }
 
-/* På mobil fjern "fixed" */
 @media (max-width: 768px) {
   body {
     background-attachment: scroll;
@@ -79,27 +74,25 @@ body {
 body {
   background: url('../assets/school/background2.png') no-repeat center center;
   background-size: cover;
-  min-height: 100vh;       /* tvinger body til altid at fylde hele skærmen */
+  min-height: 100vh;       
 }
 
-/* FAST, ROBUST BAGGRUND DER VIRKER PÅ MOBIL */
+/* FAST BAGGRUND DER VIRKER PÅ MOBIL */
 .bg {
   position: fixed;
   inset: 0;
   width: 100vw;
-  /* håndterer iOS’ dynamiske viewport */
   height: 100vh;
   height: 100dvh;
   height: 100svh;
 
-  object-fit: cover;       /* svarer til background-size: cover */
-  object-position: center; /* justér hvis motivet skal “fokusere” et andet sted */
+  object-fit: cover;       
+  object-position: center; 
   z-index: -1;
-  pointer-events: none;    /* klik går igennem til indholdet */
+  pointer-events: none;   
 }
 
 .app-shell {
-  /* tom wrapper så vi ikke bruger <body> i templaten */
 }
 
 /* NAVBAR */

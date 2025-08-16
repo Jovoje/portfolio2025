@@ -33,7 +33,7 @@ p {
 }
 
 p span {
-  margin-right: 0.4rem; /* lidt luft mellem ordene */
+  margin-right: 0.4rem; 
   cursor: pointer;
   transition: font-weight 0.2s ease;
 }
@@ -42,7 +42,6 @@ p span:hover {
   font-weight: bold;
 }
 
-/* baggrund fjernes herfra - den ligger allerede i App.vue */
 body {
   font-family: 'Outfit', sans-serif;
   margin: 0;
