@@ -127,8 +127,17 @@ onMounted(() => {
 
 const showModal = ref(false)
 const selectedProject = ref(null)
-const openProject = (project) => { selectedProject.value = project; showModal.value = true }
-const closeModal = () => { showModal.value = false; selectedProject.value = null }
+const openProject = (project) => {
+  selectedProject.value = project
+  showModal.value = true
+  document.documentElement.classList.add('no-scroll') // lås scroll
+}
+
+const closeModal = () => {
+  showModal.value = false
+  selectedProject.value = null
+  document.documentElement.classList.remove('no-scroll') // lås op
+}
 </script>
 
 
@@ -179,50 +188,49 @@ const closeModal = () => { showModal.value = false; selectedProject.value = null
       <div class="modal-content">
         <!-- Venstre side: galleri ELLER fallback -->
         <div class="modal-images">
-          <!-- Galleri (billeder + videoer) -->
-          <template
-            v-if="selectedProject && selectedProject.modalGallery && selectedProject.modalGallery.length"
-          >
-            <template
-              v-for="(item, i) in selectedProject.modalGallery"
-              :key="`gallery-${i}`"
-            >
-              <img
-                v-if="item.type === 'image'"
-                :src="item.src"
-                alt="modal image"
-              />
-              <video
-                v-else-if="item.type === 'video'"
-                :src="item.src"
-                autoplay
-                muted
-                loop
-                playsinline
-                class="modal-video"
-              ></video>
-            </template>
-          </template>
+  <!-- Galleri (billeder + videoer) -->
+  <template v-if="selectedProject && selectedProject.modalGallery && selectedProject.modalGallery.length">
+    <div class="media" v-for="(item, i) in selectedProject.modalGallery" :key="`gallery-${i}`">
+      <img
+        v-if="item.type === 'image'"
+        :src="item.src"
+        alt="modal image"
+      />
+      <video
+        v-else-if="item.type === 'video'"
+        :src="item.src"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        class="modal-video"
+      ></video>
+    </div>
+  </template>
 
-          <!-- Fallback hvis ingen modalGallery -->
-          <template v-else>
-            <video
-              v-if="selectedProject?.video"
-              :src="selectedProject.video"
-              autoplay
-              muted
-              loop
-              playsinline
-              class="modal-video"
-            ></video>
-            <img
-              v-else-if="selectedProject?.image"
-              :src="selectedProject.image"
-              alt="modal image"
-            />
-            <!-- (valgfrit) tom tilstand -->
-          </template>
-        </div>
+  <!-- Fallback hvis ingen modalGallery -->
+  <template v-else>
+    <div class="media" v-if="selectedProject?.video">
+      <video
+        :src="selectedProject.video"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        class="modal-video"
+      ></video>
+    </div>
+    <div class="media" v-else-if="selectedProject?.image">
+      <img
+        :src="selectedProject.image"
+        alt="modal image"
+      />
+    </div>
+  </template>
+</div>
+
 
         <!-- Højre side: tekst -->
         <div class="modal-text">
@@ -373,5 +381,58 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
 }
 
 .modal-text p { margin-bottom: 2.6rem; /* giver ekstra luft mellem afsnittene */ line-height: 2.2; /* gør linjeafstanden større inden for hvert afsnit */ } .modal-header { margin-bottom: 0.75rem; } .modal-header h2 { margin: 0 0 0.25rem 0; font-size: 1.25rem; } .modal-subtitle { margin: 0; color: #43548c; font-size: 0.95rem; }
+
+/* Hver media wrapper */
+.media {
+  scroll-snap-align: start;
+}
+
+/* Scroll-snap på venstre side */
+.modal-images {
+  flex: 0 0 65%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  align-content: start;
+  scroll-snap-type: y mandatory;
+}
+
+.modal-images img,
+.modal-images video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+  border-radius: 4px;
+  display: block;
+}
+
+/* --- MOBILE OPTIMERING --- */
+@media (max-width: 768px) {
+  .modal {
+    width: 95vw;
+    height: 90vh;
+    padding: 1rem;
+  }
+
+  .modal-content {
+    flex-direction: column;   /* billeder over teksten */
+    gap: 1rem;
+  }
+
+  .modal-images {
+    flex: none;
+    max-height: 50vh;        /* begræns galleri-højde */
+    scroll-snap-type: y mandatory;
+  }
+
+  .modal-text {
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
 
 </style>
