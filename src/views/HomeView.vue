@@ -11,7 +11,6 @@ const lines = [
 </script>
 
 <template>
-  <div class="background"></div> <!-- baggrundslag -->
 
   <div class="infbox">
     <div class="text">
@@ -28,17 +27,6 @@ const lines = [
 </template>
 
 <style>
-
-.background {
-  position: fixed;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%;
-  background: url('../assets/school/background2.png') no-repeat center center;
-  background-size: cover;
-  z-index: -1; /* så den ligger bag indholdet */
-}
 
 p {
   line-height: 1.6;
