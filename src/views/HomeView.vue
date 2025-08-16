@@ -42,17 +42,19 @@ p span:hover {
   font-weight: bold;
 }
 
+/* baggrund fjernes herfra - den ligger allerede i App.vue */
 body {
-     background: url('../assets/school/background2.png') no-repeat center center fixed;         
-       background-size: cover;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  color: white;
 }
 
 .infbox {
-   font-family: 'Outfit', sans-serif;
-   font-weight: 300;
-   font-size: 30px;
-   margin-left: 8vw; 
-    margin-top: 6vw;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-left: 8vw; 
+  margin-top: 6vw;
 }
 
 .text {
@@ -71,6 +73,32 @@ body {
 .image img:hover {
   transform: scale(1.08);
 }
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .infbox {
+    font-size: 24px;    
+    margin-left: 6vw;
+    margin-top: 10vw;
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .infbox {
+    font-size: 18px;     
+    margin-left: 5vw;
+    margin-top: 25vw;    
+    line-height: 1.4;
+    max-width: 90vw;     
+  }
+
+  p span {
+    margin-right: 0.25rem;
+  }
+}
+
 </style>
 
 
