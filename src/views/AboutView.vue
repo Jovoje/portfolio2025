@@ -19,8 +19,8 @@ import mig from '../assets/school/mig.jpeg'
 <style>
 .about-container {
   display: flex;
-  align-items: flex-start; /* juster lodret */
-  gap: 3rem; /* afstand mellem tekst og billede */
+  align-items: flex-start;
+  gap: 3rem;
   margin-left: 8vw;
   margin-top: 6vw;
   font-size: large;
@@ -33,7 +33,7 @@ import mig from '../assets/school/mig.jpeg'
 }
 
 .image img {
-    margin-top: 1vw;
+  margin-top: 1vw;
   width: 200px;
   height: 200px;
   border-radius: 2px;
@@ -43,4 +43,28 @@ import mig from '../assets/school/mig.jpeg'
 .image img:hover {
   transform: scale(1.08);
 }
+
+/* ---- MOBIL LAYOUT ---- */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;   /* skift til lodret layout */
+    align-items: center;      /* centrer begge dele */
+    margin-left: 0;           /* fjern venstre margin */
+    margin-top: 12vw;
+    text-align: center;
+  }
+
+  .in {
+    width: 85%;               /* gør teksten smallere så den er let at læse */
+    max-width: 100%;
+    font-size: 1rem;          /* lidt mindre font */
+  }
+
+  .image img {
+    margin-top: 2rem;
+    width: 180px;             /* evt. lidt mindre billede */
+    height: 180px;
+  }
+}
+
 </style>

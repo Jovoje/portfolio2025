@@ -56,6 +56,13 @@ export default {
 </template>
 
 <style>
+
+/* 1) Sørg for at roden aldrig er hvid */
+html, body {
+  margin: 0;
+  background-color: #000;         /* vigtig for iOS overscroll */
+}
+
 body {
   background: url('../assets/school/background2.png') no-repeat center center;
   background-size: cover;
