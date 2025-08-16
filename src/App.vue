@@ -56,13 +56,23 @@ export default {
 </template>
 
 <style>
-/* Nulstil baggrundsfarve så billedet ses korrekt */
 body {
-  background: transparent !important;
-  font-family: 'Outfit', sans-serif;
-  color: white;
-  margin: 0;
-  padding-top: 70px; /* giver plads til navbar */
+  background: url('../assets/school/background2.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* På mobil fjern "fixed" */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+body {
+  background: url('../assets/school/background2.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;       /* tvinger body til altid at fylde hele skærmen */
 }
 
 /* FAST, ROBUST BAGGRUND DER VIRKER PÅ MOBIL */
