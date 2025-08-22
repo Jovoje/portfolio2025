@@ -59,7 +59,7 @@ import artikel2 from '../assets/school/artikel2.png'
 import artikel from '../assets/school/artikel.png'
 import virum2 from '../assets/school/virum2.png'
 import wibf from '../assets/school/wibfinal.png'
-import underis1 from '../assets/school/underis1.png'
+import underis1 from '../assets/school/underis.png'
 import underis2 from '../assets/school/underis2.png'
 
 const projects = [
