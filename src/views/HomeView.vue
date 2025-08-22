@@ -54,11 +54,12 @@ body {
   font-size: 30px;
   margin-left: 8vw; 
   margin-top: 6vw;
+  padding-top: 6vw;
 }
 
 .text {
   flex: 0 0 auto;
-  text-align: left; 
+  text-align: left;
 }
 
 .image img {
