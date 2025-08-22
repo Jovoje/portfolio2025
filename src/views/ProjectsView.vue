@@ -25,7 +25,8 @@ import three from '../assets/school/three_compressed.mp4'
 import disney from '../assets/school/disney_compressed.mp4'
 import mod from '../assets/school/mod.png'
 import virum from '../assets/school/virum.png'
-import ceramic from '../assets/school/ceramic_compressed.mp4'
+import ceramic from '../assets/school/cervid3_compressed.mp4'
+import ceramic2 from '../assets/school/cervid2_compressed.mp4'
 import arctic from '../assets/school/arctic.png'
 import pidag from '../assets/school/pidag.png'
 import planet from '../assets/school/planet.png'
@@ -37,6 +38,27 @@ import pivid from '../assets/school/pivid_compressed.mp4'
 import pii from '../assets/school/pii.png'
 import proj from '../assets/school/proj_compressed.mp4'
 import sketch from '../assets/school/sketch.png'
+import fysisk from '../assets/school/Fysisk_compressed.mp4'
+import wib1 from '../assets/school/wib1.png'
+import wib2 from '../assets/school/wib2.png'    
+import wib3 from '../assets/school/wib3.png'
+import kampagne from '../assets/school/Kampagne_compressed.mp4'
+import stucard from '../assets/school/stucard.png'
+import stucard2 from '../assets/school/stucard2.png'
+import motion from '../assets/school/motion1_compressed.mp4'
+import arc2 from '../assets/school/arc2.png'
+import arcvid from '../assets/school/arcvid_compressed.mp4'
+import amal from '../assets/school/amal.png'
+import d1 from '../assets/school/3dmod1.png'
+import d2 from '../assets/school/3dmod2.png'
+import modus1 from '../assets/school/modus1.png'
+import modus2 from '../assets/school/modus2.png'
+import modus3 from '../assets/school/modus3.png'
+import modus4 from '../assets/school/modus4.png'
+import artikel2 from '../assets/school/artikel2.png'
+import artikel from '../assets/school/artikel.png'
+import virum2 from '../assets/school/virum2.png'
+
 const projects = [
 
   { id: 1, 
@@ -52,10 +74,8 @@ const projects = [
   { type: 'image', src: color }],   // 3 billeder i venstre kolonne
     modalDescription: 
     ` <p>As my second-year exam project, which focused on experience design, I created a 2D game in Unity, inspired by pixel art and retro platformer games.</p>
-
-      <p>The overall task was to design a learning experience for school children aged 10–13, helping them understand the challenges facing the Danish seas.</p>
-
-      <p>The game presents topics such as pollution, overfishing, and oxygen depletion in a simple, visual way, combined with fact-based text.</p>
+The overall task was to design a learning experience for school children aged 10–13, helping them understand the challenges facing the Danish seas.
+The game presents topics such as pollution, overfishing, and oxygen depletion in a simple, visual way, combined with fact-based text.</p>
 
       <p>The exam project was created right after completing a game design course, where I learned the basics of Unity structure, 2D and 3D worlds, and simple game mechanics.</p>` },
 
@@ -67,8 +87,8 @@ const projects = [
   { type: 'video', src: snartvid},
   { type: 'image', src: sketch },],
   modalDescription: 
-  ` <p>In collaboration with <em>Soon – Lab for Possible Futures</em>, Generation Hope and the Thoravej 29 community, an exhibition of “future letters” written by young people was created.
-    <p> The project followed a course on experience design and projection mapping, where the class was tasked with projecting an interpretation of the future letters onto a vase. </p> <p> My goal was to take drawings from the letters and animate them into a dynamic video. The exhibition ran from April 2025.</p>
+  ` <p>In collaboration with <em>Soon – Lab for Possible Futures</em> and <em>Generation Hope </em>, an exhibition of “future letters” written by young people was created. The exhibition ran from April 2025.  </p>
+    <p> The project followed a course on experience design and projection mapping, where the class was tasked with projecting an interpretation of the future letters onto a vase. </p>
     <p>The course on experience design and projection mapping delved into creating interactive experiences within spaces and on objects, and into the practice of mapping coded or animated content onto various surfaces.</p>
 ` },
 
@@ -78,7 +98,9 @@ const projects = [
   { type: 'image', src: wireframe1 },
   { type: 'image', src: wireframe2 },],
   modalDescription: 
-  ` In a course on experience sites, I was tasked with creating a website that would, in an abstract way, embrace the political discussion around Donald Trump’s wish to purchase Greenland. I developed an experiential site where visitors can explore and investigate the minerals and natural resources that Greenland possesses.` },
+  ` <p>''Under isen'' is an experience website I created in response to an assignment to interpret the political situation surrounding Donald Trump’s interest in Greenland and translate it into an interactive digital experience. The brief was relatively open, and I chose to focus on Greenland’s minerals and natural resources, which were central to Trump’s ambitions. </p> 
+    <p> The final site was aimed at a younger audience and took the form of a playful experience where users are challenged to uncover ten hidden objects beneath the ice.
+        For the visual identity, I explored Adobe Illustrator’s new AI-generator to design various assets, while the site itself was built using HTML, CSS, and JavaScript. </p>` },
 
 
 
@@ -89,26 +111,103 @@ const projects = [
   { type: 'image', src: wireco },
   { type: 'video', src: interaktiv },],
   modalDescription: 
-  ` In a course on experience sites, I was tasked with creating a website that would, in an abstract way, embrace the political discussion around Donald Trump’s wish to purchase Greenland. I developed an experiential site where visitors can explore and investigate the minerals and natural resources that Greenland possesses.` },
+  ` <p>Collum is an app I designed as part of my 3rd semester exam project. The assignment was to create a digital tool aimed at helping young people with neck-related issues. The app combines a clean visual layout with a front page, a dashboard, and an interactive feature that allows users to actively prevent or ease existing neck pain. <p>
+
+ <p> The app was prototyped in Figma, while the interactive feature was coded using JavaScript, CSS, and HTML. This feature highlights different pain points in the neck, which users can interact with to receive targeted exercises designed to relieve discomfort. The videos used in the prototype are placeholders sourced from the web. <p>` },
     
-  { id: 5, title: '3D worlds', subtitle: 'identity and visualization, 2024', video: three, description: '...' },
+  { id: 5, title: '3D worlds', subtitle: 'identity and visualization, 2024', video: three, description: '...', 
+    modalDescription: 
+    ` <p>In a course on 3D worlds, I created a 3D model of a deserted landscape using the Javascript library Three.js. The assignment was part of a storytelling course, where the task was to create a short narrative told through a 3D environment.</p>
+      <p> Through the process, I gained hands-on experience with Three.js and learned how to structure and optimize a small 3D world for the web. The result was a playful prototype that combined narrative design with real-time rendering, showing how interactive worlds can act as both storytelling devices and creative experiments.</p>`
+  },
+
   
-  { id: 7, title: '1st year exam', subtitle: 'front and back, 2024', image: mainFinal, description: '...' },
-  { id: 8, title: 'student cards redesign', subtitle: 'front and back, 2024', image: studentCard, description: '...' },
-  { id: 9, title: 'motion graphics', subtitle: 'motion design and living pictures, 2024', video: disney, description: '...' },
-  { id: 17, title: '1st semester exam', subtitle: 'visualization and creativity, 2023', image: arctic, description: '...' },
-  { id: 10, title: '3D modeling', subtitle: 'Kategori, 2023', image: mod, description: '...' },
+  { id: 7, title: '1st year exam', subtitle: 'front and back, 2024', image: mainFinal, description: '...',
+      modalGallery: [
+  { type: 'image', src: wib1 },
+  { type: 'image', src: wib2 },
+  { type: 'image', src: wib3 },
+  { type: 'video', src: kampagne },
+    { type: 'video', src: fysisk },
+
+    
+],
+  modalDescription: 
+  ` <p> “While in Battle I’m Free, Never Free to Rest” was a contemporary dance performance showcased at Blågårds Plads in Copenhagen during the summer of 2024. As an exam project, we were tasked with creating a visual identity, a campaign website, and an interactive feature to be exhibited physically during the performance. </p>
+
+  <p> The project became an exploration of the body’s dynamics and movement in dance, intertwined with themes of war, division, and liberation of the body.
+
+  Through multiple iterations and sketches, we developed a distinctive visual style (image 1), a campaign site designed to express dynamics through shifting colors, and an interactive feature – a touch screen installation where users could assemble their own composition of “body parts” taken from our poster design. </p>
+
+  <p>The project was created in collaboration with my classmate Alberte Stærmose. </p>` },
+
+
+
+
+  { id: 8, title: 'student cards redesign', subtitle: 'front and back, 2024', image: studentCard, description: '...',    
+  modalGallery: [
+  { type: 'image', src: stucard },
+  { type: 'image', src: stucard2 }],
+  modalDescription: 
+  ` <p> As part of a group project with five classmates, we were tasked with selecting an everyday object and redesigning it. We chose our student ID cards, which are usually very basic, formal, and purely informational. </p>
+   <p> Through experimentation, we explored how Processing could be integrated into the design process. We mapped the four study directions of our program (ID, CD, KK, and GD) into generative visual patterns created in Processing. The result was a series of redesigned student cards that combine function with a more playful and expressive identity. </p>` },
+ 
+ 
+   { id: 9, title: 'motion graphics', subtitle: 'motion design and living pictures, 2024', video: disney, description: '...',
+          modalGallery: [
+  { type: 'video', src: motion }],
+  modalDescription:
+` <p> As part of a course in motion graphics, we were tasked with creating a short video about a well-known animator. My group was assigned Walt Disney, and we produced a one-and-a-half-minute video that explored both his legacy and the possibilities of Adobe After Effects. </p> <p> The project became an exercise in experimenting with visual effects, layered compositions, and different animation techniques. It was both a technical and creative exploration, giving me hands-on experience in how motion graphics can be used to communicate storytelling in a dynamic way. </p>` },
+  
+
+
+{ id: 17, title: '1st semester exam', subtitle: 'visualization and creativity, 2023', image: arctic, description: '...',
+    modalGallery: [
+  { type: 'image', src: arctic },
+  { type: 'image', src: arc2 },
+  { type: 'video', src: arcvid }],
+  modalDescription: 
+  ` <p> As part of a group project with five classmates, we were tasked with selecting an everyday object and redesigning it. We chose our student ID cards, which are usually very basic, formal, and purely informational. </p>
+   <p> Through experimentation, we explored how Processing could be integrated into the design process. We mapped the four study directions of our program (ID, CD, KK, and GD) into generative visual patterns created in Processing. The result was a series of redesigned student cards that combine function with a more playful and expressive identity. </p>` },
+
+  { id: 10, title: '3D modeling', subtitle: 'Kategori, 2023', image: mod, description: '...',modalGallery: [
+  { type: 'image', src: d2 },
+  { type: 'image', src: d1 },],
+  modalDescription: 
+  ` <p> As part of learning 3D modeling in Blender, we were tasked with creating an island of our own deisng, with complete freedom in theme and visual style. </p> <p> I drew inspiration from one of my favorite childhood games, Spore, and designed a small representative island. </p>` },
   { id: 11, title: 'processing', subtitle: 'creative coding, 2023', image: pidag, description: '...',modalGallery: [
   { type: 'video', src: pivid },
-  { type: 'image', src: pii },
-  { type: 'video', src: interaktiv },],
+  { type: 'image', src: pii },],
   modalDescription: 
-  ` In a course on experience sites, I was tasked with creating a website that would, in an abstract way, embrace the political discussion around Donald Trump’s wish to purchase Greenland. I developed an experiential site where visitors can explore and investigate the minerals and natural resources that Greenland possesses.` },
-  { id: 12, title: 'virtual ceramics', subtitle: 'creative coding, 2023', video: ceramic, description: '...' },
-  { id: 13, title: 'redesign project', subtitle: 'modus design course, 2023', image: planet, description: '...' },
-  { id: 14, title: 'visual interpretation of a news article', subtitle: 'modus design course, 2023', image: mood, description: '...' },
-  { id: 15, title: 'virumhallen', subtitle: 'medieskolen lyngby, 2018', image: virum, description: '...' },
-  { id: 16, title: 'heart result logo', subtitle: 'medieskolen lyngby, 2017', image: heart, description: '...' }
+  ` <p>For the official Pi Day at the University of Copenhagen, we were tasked with designing a dynamic poster in Processing that visually represented the number π in some way. </p> <p>Using generative design, I explored ways of representing the mathematical constant π as a visual, animated expression.</p>` },
+  
+  { id: 12, title: 'virtual ceramics', subtitle: 'creative coding, 2023', video: ceramic, description: '...', modalGallery: [
+  { type: 'video', src: ceramic },
+  { type: 'video', src: ceramic2 },
+  { type: 'image', src: amal },],
+  modalDescription: ` <p> This project was a series of playful experiments during my process of learning Processing. I worked with ceramic sculptures created by my sister,  <a href="https://www.instagram.com/amalievoge" target="_blank" rel="noopener noreferrer">
+      Amalie Vöge
+    </a> and translated them into digital 3D forms. </p>`  },
+
+
+  { id: 13, title: 'redesign project', subtitle: 'modus design course, 2023', image: modus3, description: '...',
+  modalGallery: [
+  { type: 'image', src: modus1 },
+  { type: 'image', src: modus2 },
+  { type: 'image', src: modus3 },
+  { type: 'image', src: modus4 },],
+ 
+  modalDescription: ` <p> During a design course at Modus, we explored the concept of redesign. A key focus of the course was the use of sketchbooks as a tool to support the design process. The assignment was simple: choose any object and reinterpret its visual expression. </p> <p> I chose the Tycho Brahe Planetarium in Copenhagen, a building I personally admire. Through sketches and drawings, I investigated its structures and patterns, which eventually led me to create a poster with the theme ‘Open Up to the Universe.’ </p> (Disclaimer: this was a conceptual project and not used in practice.`  },
+  
+  
+  { id: 14, title: 'visual interpretation of a news article', subtitle: 'modus design course, 2023', image: mood, description: '...',
+     modalGallery: [
+  { type: 'image', src: mood },
+  { type: 'image', src: artikel },
+  { type: 'image', src: artikel2 },],
+ 
+  modalDescription: ` <p> During a design course at Modus, we explored the concept of redesign. A key focus of the course was the use of sketchbooks as a tool to support the design process. The assignment was simple: choose any object and reinterpret its visual expression. </p> <p> I chose the Tycho Brahe Planetarium in Copenhagen, a building I personally admire. Through sketches and drawings, I investigated its structures and patterns, which eventually led me to create a poster with the theme ‘Open Up to the Universe.’ </p> (Disclaimer: this was a conceptual project and not used in practice.`  },
+
 ]
 
 const variants = ['normal','tall','wide','big']
@@ -201,7 +300,6 @@ const closeModal = () => {
         muted
         loop
         playsinline
-        controls
         class="modal-video"
       ></video>
     </div>
@@ -216,7 +314,6 @@ const closeModal = () => {
         muted
         loop
         playsinline
-        controls
         class="modal-video"
       ></video>
     </div>
@@ -342,7 +439,7 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
 }
 
 .modal-images {
-  flex: 0 0 65%;
+  flex: 0 0 75%;
   display: grid;
   grid-template-columns: 1fr; /* én kolonne */
   gap: 1rem;
@@ -368,15 +465,17 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   padding-left: 1.5rem;
   padding-right: 0.5rem;
   font-size: 1rem;
-  line-height: 1.75;
   color: #ddd;
+  font-family: Work Sans, sans-serif;
+  font-weight: 300;
 }
 
-.modal-text p {
-  margin-bottom: 1.4rem;
+.modal-header {
+  font-weight: 600;
+  font-family: Outfit, sans-serif;
 }
 
-.modal-text p { margin-bottom: 2.6rem;  line-height: 2.2; } .modal-header { margin-bottom: 0.75rem; } .modal-header h2 { margin: 0 0 0.25rem 0; font-size: 1.25rem; } .modal-subtitle { margin: 0; color: #43548c; font-size: 0.95rem; }
+.modal-text p { margin-bottom: 1.6rem;  line-height: 1.8; } .modal-header  .modal-header h2 { margin: 0 0 0.25rem 0; font-size: 1.25rem; } .modal-subtitle { margin: 0; color: #6e6e6e; font-size: 0.95rem; }
 
 .media {
   scroll-snap-align: start;
@@ -425,7 +524,7 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   .modal-text {
     padding: 0;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 }
 

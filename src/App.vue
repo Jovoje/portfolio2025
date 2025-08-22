@@ -95,13 +95,6 @@ body {
 .app-shell {
 }
 
-/* NAVBAR */
-.nothing-you-could-do-regular {
-  font-family: "Nothing You Could Do", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .navbar {
   font-family: 'Outfit', sans-serif;
   font-weight: 600;

@@ -1,22 +1,75 @@
 <script setup>
-import mig from '../assets/school/mig.jpeg'
+import mig from '../assets/school/migny.png'
 </script>
 
 <template>
   <div class="about-container">
     <div class="in">
-      Hi!  
-      I’m Josefine Vöge Jensen <br><br>
-      I’m a 23-year-old visual communication student based in Copenhagen, currently studying Coded Design <br>at the Danish School of Media and Journalism. <br> My main interests lie in game design, interaction design, <br> and visual storytelling. <br> I’m currently seeking an internship starting in October 2025.
+      <h1>Hi!  I’m Josefine Vöge Jensen</h1> <br>
+      I’m a 23-year-old student based in Copenhagen,<br>currently studying Coded Design, visual communication at the Danish School of Media and Journalism. <br> My main interests lie in game design, interaction design, <br> and visual storytelling. <br> I’m currently seeking an internship starting in October 2025.
     </div>
 
     <div class="image">
       <img :src="mig" alt="mig" />
     </div>
   </div>
+  <hr class="divider" />
+
+  
+
+  <section class="cv-section">
+    <h2 class="cv-title">CV</h2>
+    
+    <div class="cv-entry">
+      <div class="cv-year">2023 – 2026</div>
+      <div class="cv-info">
+        <strong>Danish School of Media and Journalism</strong><br>
+        Bachelor Degree in Visual Communication – Coded Design
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-year">2022</div>
+      <div class="cv-info">
+        <strong>Modus Design Course</strong><br>
+        Drawing and design program
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-year">2018-2021</div>
+      <div class="cv-info">
+        <strong>Gammel Hellerup Gymnasium</strong><br>
+        A-level Ancient Greek and Latin
+      </div>
+        </div> <div class="cv-entry">
+      <div class="cv-year">2017-2018</div>
+      <div class="cv-info">
+        <strong>Medieskolen Lyngby</strong><br>
+        Graphic Design 
+      </div>
+    </div> <div class="cv-entry">
+      <div class="cv-year">2007-2017</div>
+      <div class="cv-info">
+        <strong>Hørsholm Skole</strong><br>
+        Primary and Secondary School
+      </div>
+    </div>
+  </section>
 </template>
 
+
 <style>
+
+.divider {
+  border: none;          /* fjerner standard stregen */
+  height: 1px;           /* tykkelse */
+  background: #ffffff;      /* farve */
+  margin: 3rem 8vw;      /* luft over/under + samme margin som din tekst */
+
+           /* gør den lidt subtil */
+}
+
 .about-container {
   display: flex;
   align-items: flex-start;
@@ -24,6 +77,8 @@ import mig from '../assets/school/mig.jpeg'
   margin-left: 8vw;
   margin-top: 6vw;
   font-size: large;
+  font-family: Outfit, sans-serif;
+  font-weight: 200;
 }
 
 .in {
@@ -65,6 +120,43 @@ import mig from '../assets/school/mig.jpeg'
     width: 180px;             /* evt. lidt mindre billede */
     height: 180px;
   }
+}
+
+.cv-section {
+  margin: 4rem 8vw;
+  color: white;
+    font-family: Outfit, sans-serif;
+      font-weight: 200;
+}
+
+.cv-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 0.5rem;
+}
+
+.cv-entry {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.5); /* hvide streger */
+}
+
+.cv-entry:last-child {
+  border-bottom: none; /* fjern streg under sidste */
+}
+
+.cv-year {
+  min-width: 120px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.cv-info {
+  flex: 1;
+  line-height: 1.6;
 }
 
 </style>
