@@ -48,12 +48,6 @@ import mig from '../assets/school/migny.png'
         <strong>Medieskolen Lyngby</strong><br>
         Graphic Design 
       </div>
-    </div> <div class="cv-entry">
-      <div class="cv-year">2007-2017</div>
-      <div class="cv-info">
-        <strong>Hørsholm Skole</strong><br>
-        Primary and Secondary School
-      </div>
     </div>
   </section>
 </template>
