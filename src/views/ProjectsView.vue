@@ -59,6 +59,8 @@ import artikel2 from '../assets/school/artikel2.png'
 import artikel from '../assets/school/artikel.png'
 import virum2 from '../assets/school/virum2.png'
 import wibf from '../assets/school/wibfinal.png'
+import underis1 from '../assets/school/underis1.png'
+import underis2 from '../assets/school/underis2.png'
 
 const projects = [
 
@@ -96,8 +98,8 @@ The game presents topics such as pollution, overfishing, and oxygen depletion in
   { id: 3, title: 'experience site', subtitle: 'experience design, 2025', image: experienceSite, description: '...',   
   modalGallery: [
   { type: 'video', src: isvideo },
-  { type: 'image', src: wireframe1 },
-  { type: 'image', src: wireframe2 },],
+  { type: 'image', src: underis2 },
+  { type: 'image', src: underis1 },],
   modalDescription: 
   ` <p>''Under isen'' is an experience website I created in response to an assignment to interpret the political situation surrounding Donald Trump’s interest in Greenland and translate it into an interactive digital experience. The brief was relatively open, and I chose to focus on Greenland’s minerals and natural resources, which were central to Trump’s ambitions. </p> 
     <p> The final site was aimed at a younger audience and took the form of a playful experience where users are challenged to uncover ten hidden objects beneath the ice.
