@@ -58,6 +58,7 @@ import modus4 from '../assets/school/modus4.png'
 import artikel2 from '../assets/school/artikel2.png'
 import artikel from '../assets/school/artikel.png'
 import virum2 from '../assets/school/virum2.png'
+import wibf from '../assets/school/wibfinal.png'
 
 const projects = [
 
@@ -73,7 +74,7 @@ const projects = [
   { type: 'image', src: elements }, 
   { type: 'image', src: color }],   // 3 billeder i venstre kolonne
     modalDescription: 
-    ` <p>As my second-year exam project, which focused on experience design, I created a 2D game in Unity, inspired by pixel art and retro platformer games.</p>
+    ` <p>As my second-year exam project, which focused on experience design, I created a 2D game in Unity, inspired by pixel art and retro platform games.</p>
 The overall task was to design a learning experience for school children aged 10–13, helping them understand the challenges facing the Danish seas.
 The game presents topics such as pollution, overfishing, and oxygen depletion in a simple, visual way, combined with fact-based text.</p>
 
@@ -122,7 +123,7 @@ The game presents topics such as pollution, overfishing, and oxygen depletion in
   },
 
   
-  { id: 7, title: '1st year exam', subtitle: 'front and back, 2024', image: mainFinal, description: '...',
+  { id: 7, title: '1st year exam', subtitle: 'front and back, 2024', image: wibf, description: '...',
       modalGallery: [
   { type: 'image', src: wib1 },
   { type: 'image', src: wib2 },
@@ -174,18 +175,18 @@ The game presents topics such as pollution, overfishing, and oxygen depletion in
   { type: 'image', src: d2 },
   { type: 'image', src: d1 },],
   modalDescription: 
-  ` <p> As part of learning 3D modeling in Blender, we were tasked with creating an island of our own deisng, with complete freedom in theme and visual style. </p> <p> I drew inspiration from one of my favorite childhood games, Spore, and designed a small representative island. </p>` },
+  ` <p> As part of learning 3D modeling in Blender, we were tasked with creating an island of our own design, with complete freedom in theme and visual style. </p> <p> I drew inspiration from one of my favorite childhood games; Spore, and designed a small representative island. </p>` },
   { id: 11, title: 'processing', subtitle: 'creative coding, 2023', image: pidag, description: '...',modalGallery: [
   { type: 'video', src: pivid },
   { type: 'image', src: pii },],
   modalDescription: 
-  ` <p>For the official Pi Day at the University of Copenhagen, we were tasked with designing a dynamic poster in Processing that visually represented the number π in some way. </p> <p>Using generative design, I explored ways of representing the mathematical constant π as a visual, animated expression.</p>` },
+  ` <p>For the official Pi Day at the University of Copenhagen, we were tasked with designing a dynamic poster in Processing, which visually represented the number π. </p> <p>Using generative design, I explored ways of representing the mathematical constant π as a visual, animated expression.</p>` },
   
   { id: 12, title: 'virtual ceramics', subtitle: 'creative coding, 2023', video: ceramic, description: '...', modalGallery: [
   { type: 'video', src: ceramic },
   { type: 'video', src: ceramic2 },
   { type: 'image', src: amal },],
-  modalDescription: ` <p> This project was a series of playful experiments during my process of learning Processing. I worked with ceramic sculptures created by my sister,  <a href="https://www.instagram.com/amalievoge" target="_blank" rel="noopener noreferrer">
+  modalDescription: ` <p> This project was a playful experiment during my learning of Processing. </p> <p> I worked with ceramic sculptures created by my sister,  <a href="https://www.instagram.com/amalievoge" target="_blank" rel="noopener noreferrer"> 
       Amalie Vöge
     </a> and translated them into digital 3D forms. </p>`  },
 
@@ -197,7 +198,7 @@ The game presents topics such as pollution, overfishing, and oxygen depletion in
   { type: 'image', src: modus3 },
   { type: 'image', src: modus4 },],
  
-  modalDescription: ` <p> During a design course at Modus, we explored the concept of redesign. A key focus of the course was the use of sketchbooks as a tool to support the design process. The assignment was simple: choose any object and reinterpret its visual expression. </p> <p> I chose the Tycho Brahe Planetarium in Copenhagen, a building I personally admire. Through sketches and drawings, I investigated its structures and patterns, which eventually led me to create a poster with the theme ‘Open Up to the Universe.’ </p> (Disclaimer: this was a conceptual project and not used in practice.`  },
+  modalDescription: ` <p> During a design course at Modus, we explored the concept of redesign. A key focus of the course was the use of sketchbooks as a tool to support the design process. The assignment was simple: choose any object and reinterpret its visual expression. </p> <p> I chose the visual identity of Tycho Brahe Planetarium in Copenhagen, a building I personally admire. Through sketches and drawings, I investigated its structures and patterns, which eventually led me to create a poster with the theme ‘Open Up to the Universe.’ </p> (Disclaimer: this was a conceptual project and not used in practice.`  },
   
   
   { id: 14, title: 'visual interpretation of a news article', subtitle: 'modus design course, 2023', image: mood, description: '...',
@@ -206,7 +207,9 @@ The game presents topics such as pollution, overfishing, and oxygen depletion in
   { type: 'image', src: artikel },
   { type: 'image', src: artikel2 },],
  
-  modalDescription: ` <p> During a design course at Modus, we explored the concept of redesign. A key focus of the course was the use of sketchbooks as a tool to support the design process. The assignment was simple: choose any object and reinterpret its visual expression. </p> <p> I chose the Tycho Brahe Planetarium in Copenhagen, a building I personally admire. Through sketches and drawings, I investigated its structures and patterns, which eventually led me to create a poster with the theme ‘Open Up to the Universe.’ </p> (Disclaimer: this was a conceptual project and not used in practice.`  },
+  modalDescription: ` <p> This was a design assignment where I was asked to select a news article and interpret it visually.
+The article I chose focused on misdiagnosis and the serious consequences it can have on an individual. </p>
+<p> Throughout the creative process, I worked with moodboards and collage techniques to explore and express the themes of the article. </p>`  },
 
 ]
 
@@ -478,8 +481,20 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
 .modal-text p { margin-bottom: 1.6rem;  line-height: 1.8; } .modal-header  .modal-header h2 { margin: 0 0 0.25rem 0; font-size: 1.25rem; } .modal-subtitle { margin: 0; color: #6e6e6e; font-size: 0.95rem; }
 
 .media {
-  scroll-snap-align: start;
+  scroll-snap-align: none;
 }
+
+.modal-text a {
+  color: #ffffff;       /* hvid tekst (eller en anden farve du vil have) */
+  text-decoration: none; /* fjern standard underline */
+  transition: border-bottom 0.2s ease;
+}
+
+.modal-text a:hover {
+  border-bottom: 1px solid #ffffff; /* underline-effekt ved hover */
+}
+
+
 
 .modal-images {
   flex: 0 0 65%;
@@ -489,7 +504,7 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   overflow-y: auto;
   padding-right: 0.5rem;
   align-content: start;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: none;
 }
 
 .modal-images img,
@@ -518,7 +533,7 @@ background-color: rgba(0, 0, 0, 0.5); /* sort med 70% opacitet */
   .modal-images {
     flex: none;
     max-height: 50vh;      
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
   }
 
   .modal-text {
