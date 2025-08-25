@@ -61,6 +61,7 @@ import virum2 from '../assets/school/virum2.png'
 import wibf from '../assets/school/wibfinal.png'
 import underis1 from '../assets/school/underis.png'
 import underis2 from '../assets/school/underis2.png'
+import wib4 from '../assets/school/wib4.png'
 
 const projects = [
 
@@ -129,6 +130,7 @@ The game presents topics such as pollution, overfishing, and oxygen depletion in
       modalGallery: [
   { type: 'image', src: wib1 },
   { type: 'image', src: wib2 },
+  { type: 'image', src: wib4 },
   { type: 'image', src: wib3 },
   { type: 'video', src: kampagne },
     { type: 'video', src: fysisk },
