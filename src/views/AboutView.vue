@@ -1,5 +1,6 @@
 <script setup>
 import mig from '../assets/school/migny.png'
+import mig2 from '../assets/school/23.jpeg'
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import mig from '../assets/school/migny.png'
     </div>
 
     <div class="image">
-      <img :src="mig" alt="mig" />
+      <img :src="mig2" alt="jpeg" />
     </div>
   </div>
   <hr class="divider" />
